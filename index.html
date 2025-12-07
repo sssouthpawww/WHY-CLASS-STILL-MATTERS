@@ -46,18 +46,33 @@
       color: #666;
     }
     .download {
-  text-align: center;
-  margin: 2.5em 0;
-}
-.download a {
-  font-weight: 500;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-  padding-bottom: 2px;
-}
-.download a:hover {
-  opacity: 0.7;
-}
+      text-align: center;
+      margin: 2.5em 0;
+    }
+    .download a {
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+    }
+    .download a:hover {
+      opacity: 0.7;
+    }
+    /* New styles for the audio players */
+    .audio-list {
+        margin-top: 3em;
+        padding: 0;
+        list-style-type: none; /* Removes bullet points */
+    }
+    .audio-list li {
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .audio-list audio {
+        width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -76,18 +91,33 @@
 
   <div class="download">
     <p>
-  <a href="Why_Class_Still_Matters.pdf" target="_blank">📖 Read online</a>
-  &nbsp;·&nbsp;
-  <a href="Why_Class_Still_Matters.pdf" download>⬇️ Download PDF</a>
+      <a href="Why_Class_Still_Matters.pdf" target="_blank">📖 Read online</a>
       &nbsp;·&nbsp;
-      <!-- New Audiobook link -->
-    <a href="https://drive.google.com/drive/folders/1a8eJYinH37RNAmuVgT5zrJIbJ790KC-F" target="_blank" rel="noopener">🎧 Audiobook (Google Drive)</a>
-</p>
+      <a href="Why_Class_Still_Matters.pdf" download>⬇️ Download PDF</a>
+      &nbsp;·&nbsp;
+      <!-- Original Google Drive link -->
+      <a href="https://drive.google.com/drive/folders/1a8eJYinH37RNAmuVgT5zrJIbJ790KC-F" target="_blank" rel="noopener">🎧 Audiobook (Google Drive)</a>
+    </p>
   </div>
 
- <footer>
-  © 2025 People’s Press · Designed by
-  <a href="https://www.instagram.com/sssouthpawww/" target="_blank" rel="noopener">Nick Votsis</a>
-</footer>
+  <!-- START OF NEW AUDIO PLAYER CODE -->
+  <ul class="audio-list">
+    <li>01 Introductory Paragraph<audio controls src="audio/01introductoryparagraph.mp3"></audio></li>
+    <li>02 Introduction<audio controls src="audio/02introduction.mp3"></audio></li>
+    <li>03 Chapter 1: Condition of the Working Class on Planet Earth<audio controls src="audio/03chapter1conditionoftheworkingclassonplanetearth.mp3"></audio></li>
+    <li>04 Chapter 2: Origins<audio controls src="audio/04chapter2origins.mp3"></audio></li>
+    <li>05 Chapter 3: The Rise of Capitalism<audio controls src="audio/05chapter3theriseofcapitalism.mp3"></audio></li>
+    <li>06 Chapter 4: The Rise of the Working Class<audio controls src="audio/06chapter4theriseoftheworkingclass.mp3"></audio></li>
+    <li>07 Chapter 5: Fetishism<audio controls src="audio/07chapter5fetishism.mp3"></audio></li>
+    <li>08 Chapter 6: Globalised Capitalism<audio controls src="audio/08chapter6globalisedcapitalism.mp3"></audio></li>
+    <li>09 Chapter 7: Capitalism versus Socialism<audio controls src="audio/09chapter7capitalismversussocialism.mp3"></audio></li>
+    <li>10 Chapter 8: What is to be done?<audio controls src="audio/10chapter8whatistobedone.mp3"></audio></li>
+  </ul>
+  <!-- END OF NEW AUDIO PLAYER CODE -->
+
+  <footer>
+    © 2025 People’s Press · Designed by
+    <a href="https://www.instagram.com/sssouthpawww/" target="_blank" rel="noopener">Nick Votsis</a>
+  </footer>
 </body>
 </html>
